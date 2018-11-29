@@ -2,7 +2,7 @@
 import sys
 import time
 import httplib as http
-import urllib
+
 import json
 import RPi.GPIO as GPIO
 deviceId = "DG0C3FZC"
