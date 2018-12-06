@@ -17,7 +17,7 @@ def post_to_mcs(payload):
 			not_connected = 0 
 		except (httplib.HTTPException, socket.error) as ex: 
 			print( "Error: %s" %ex) 
-			time.sleep(10)
+			time.sleep(1)
 			 # sleep 10 seconds 
 	conn.request("POST", "/mcs/v2/devices/" + deviceId + "/datapoints", json.dumps(payload), headers) 
 	response = conn.getresponse() 
